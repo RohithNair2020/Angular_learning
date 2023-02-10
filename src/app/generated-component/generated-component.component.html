@@ -1,0 +1,27 @@
+<p class="generated-component-title">generated-component works!</p>
+<p>And this is under the generated component : </p>
+<ul class="generated-component-list-container">
+    <li><first-component></first-component></li>
+</ul>
+<p>This button gets active after 3 seconds using <em>property binding : </em></p>
+<button [disabled]="!isActive">{{buttonText}}</button>
+
+<div class="generated-component-list-container">
+    <h2>{{ serverStatusText }}</h2>
+    <button (click)="switchOnServer()">Switch On</button>
+</div>
+
+<div class="generated-component-list-container">
+    <p>Use the input below: </p>
+    <h2>{{inputText}}</h2>
+    <input type="text" (input)="handleInputTextChange($event)">
+</div>
+
+<div class="generated-component-list-container">
+    <p>These are the servers listed using *ngFor :</p>
+    <ul>
+        <li *ngFor="let server of serversList; let ind = index">{{ server }} and the index is : {{ ind }}</li>
+    </ul>
+    <input type="text" (input)="handleInputTextChange($event)">
+    <button (click)="addNewServer()">Add</button>
+</div>

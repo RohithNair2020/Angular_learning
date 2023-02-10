@@ -1,0 +1,13 @@
+.generated-component-title {
+    color: tomato;
+    font-size: large;
+    font-weight: bold;
+}
+
+.generated-component-list-container {
+    margin-top: 10px;
+    background-color: salmon;
+    padding: 30px;
+    border-radius: 4px;
+}
+
